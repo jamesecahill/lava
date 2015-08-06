@@ -1,0 +1,7 @@
+{{outlet}}
+{{#each model as |type|}}
+    {{type.id}}
+    {{#each type.fields as |field|}}
+        {{field}}
+    {{/each}}
+{{/each}}
