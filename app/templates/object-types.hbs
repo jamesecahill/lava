@@ -1,7 +1,6 @@
-{{outlet}}
+<ul>
 {{#each model as |type|}}
-    {{type.id}}
-    {{#each type.fields as |field|}}
-        {{field}}
-    {{/each}}
+    <li>{{#link-to 'objectTypes.objectType' type.id}}{{type.id}}{{/link-to}}</li>
 {{/each}}
+</ul>
+{{outlet}}

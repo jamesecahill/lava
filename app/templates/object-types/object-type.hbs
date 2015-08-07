@@ -1,0 +1,9 @@
+{{outlet}}
+<h4>{{model.id}}</h4>
+<button {{action 'addField'}}>Add Field</button>
+<ul>
+    {{#each model.fields as |field|}}
+    <li>{{field}}</li>
+    {{/each}}
+</ul>
+{{#link-to 'objects' model.id}}View Object{{/link-to}}

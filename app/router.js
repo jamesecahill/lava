@@ -6,7 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('objectTypes');
+  this.route('objectTypes', function() {
+    this.route('objectType', {
+        path: ':objectTypeId'
+    });
+  });
 
   this.route('objects', {
     path: '/objects/:object_type'
