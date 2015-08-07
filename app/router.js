@@ -7,6 +7,10 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('objectTypes');
+
+  this.route('objects', {
+    path: '/objects/:object_type'
+  });
 });
 
 export default Router;

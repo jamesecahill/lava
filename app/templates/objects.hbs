@@ -1,0 +1,8 @@
+{{outlet}}
+<h3>{{modelDef.id}}</h3>
+{{#each model as |instance|}}
+    id: {{instance.id}}<br>
+    {{#each modelDef.fields as |field|}}
+        {{field}}: {{modelfield instance field}}<br>
+    {{/each}}
+{{/each}}

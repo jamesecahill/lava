@@ -10,6 +10,12 @@ module.exports = function(app) {
               fields: [
                   'field1'
               ]
+          },
+          {
+              id: 'type2',
+              fields: [
+                  'field1'
+              ]
           }
       ]
     });

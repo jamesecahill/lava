@@ -15,12 +15,4 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
-App.instanceInitializer({
-    name: "Init",
-    initialize: function(instance) {
-        //TODO hookup model creation code here.
-        console.log(instance.container.lookup("store:main"));
-    }
-});
-
 export default App;
